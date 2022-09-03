@@ -1,0 +1,15 @@
+{
+  "name": "halifax-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://willise414.github.io/halifax-canoe",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}

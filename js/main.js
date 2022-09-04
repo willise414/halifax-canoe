@@ -53,3 +53,54 @@ function changePage() {
   // console.log(x);
   //window.location.href = `${x}.html`;
 }
+
+// Form Handler
+let fullName = document.getElementById("name").value;
+
+let formSubmit = document.getElementById("booking-btn");
+
+let myValue = document.getElementById("adventure");
+myValue.addEventListener("change", selectedAdventure);
+
+function selectedAdventure() {
+  let dates = document.getElementById("dates");
+  let price = document.getElementById("price");
+  let fullName = document.getElementById("name");
+  const selected = document.getElementById("adventure").value;
+
+  if (selected === "Halifax") {
+    price.value = 249;
+
+    dates.value = "July 14-16, 2023";
+  } else if (selected === "Sydney") {
+    price.value = 399;
+    dates.value = "June 12-14, 2023";
+  } else if (selected === "Cape Breton") {
+    price.value = 459;
+    dates.value = "June 7-10, 2023";
+  }
+  //   return price;
+
+  //   let response = `<h1> Thank you for your booking ${fullName}</h1>
+  //   <h3>We look forward to seeing you in ${selected} on ${dates}</h3>
+  //   <h3>The price for this adventure is ${total}.
+  //   <h3>We will send a confirmation and further details to ${email} `;
+  //   document.querySelector(".confirm").innerHTML = response;
+}
+
+formSubmit.addEventListener("click", () => {
+  document.querySelector(".bookingForm").classList.add("hideMessage");
+  document.querySelector(".confirm").classList.remove("hideMessage");
+  document.querySelector(".container").classList.add("hideMessage");
+  document.querySelector(".confirm").classList.add("showMessage");
+  let fullName = document.getElementById("name");
+  let selected = document.getElementById("adventure");
+  let email = document.getElementById("email").value;
+  let phone = document.getElementById("phone").value;
+
+  let response = `<h1> Thank you for your booking ${fullName.value}!</h1>
+   <h3>We look forward to seeing you in ${selected.value} on ${dates.value}</h3>
+  <h3>The price for this adventure is $${price.value}.
+   <h3>We will send a confirmation and further details to ${email}. `;
+  document.querySelector(".confirm").innerHTML = response;
+});

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Halifax Canoe and Kayak</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/paddle-white.png" alt="">
+        </div>
+        <div class="company">
+            <p>Halifax Canoe and Kayak</p>
+        </div>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait">
+                    <h2>Halifax Canoe and Kayak</h2>
+                    <h3>224 Somestreet</h3>
+                    <h3>Halifax, Nova Scotia</h3>
+                    <h3>A1A 1A1</h3>
+                    <h3>Phone: (902) 555-5555</h3>
+                    <h3>Email: HFX-canoe-kayak@gmail.com</h3>
+                    <a href="#" class="btn">Contact Us!</a>
+
+                </div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item home current">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item home current">
+                    <a href="adventures.html" class="nav-link">Our Adventures</a>
+                </li>
+                <li class="nav-item home current">
+                    <a href="book.html" class="nav-link">Book an Adventure</a>
+                </li>
+                <li class="nav-item home current">
+                    <a href="admin.html" class="nav-link">Admin Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <form action="#" class="bookingForm">
+
+            <div class="user-info">
+                <h1>Adventure Reservation</h1>
+
+                <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" id="name" placeholder="Enter Your Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" id="email" placeholder="Enter Your Email" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone</span>
+                    <input type="text" id="phone" placeholder="Enter Your Phone" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Adventure</span>
+                    <select id="adventure">
+                        <option value="" disabled selected>Select Your Adventure</option>
+                        <option value="Halifax">Halifax</option>
+                        <option value="Sydney">Sydney</option>
+                        <option value="Cape Breton">Cape Breton</option>
+                    </select>
+
+                </div>
+                <div class="input-box">
+                    <span class="details">Dates</span>
+                    <input type="text" id="dates" placeholder="Adventure Dates" readonly>
+                </div>
+                <div class="input-box">
+                    <span class="details">Price</span>
+                    <input type="text" id="price" placeholder="Adventure Price" readonly>
+                </div>
+                <div class="booking-button" id="booking-btn">
+                    <a href="#">Submit</a>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <div class="success">
+        <div class="confirm hide">
+
+        </div>
+        <a href="index.html" class="success-btn">Return to Home</a>
+    </div>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

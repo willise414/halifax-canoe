@@ -366,3 +366,84 @@ form {
   color: white;
   background-color: #034499;
 }
+.hideBtn {
+  display: none;
+}
+.showBtn {
+  display: block;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 600px) {
+  .company p {
+    font-size: 20px;
+  }
+  header .logo img {
+    height: 40px;
+  }
+  h1.lg-heading {
+    font-size: 3em;
+  }
+  .portrait h2 {
+    font-size: 20px;
+  }
+  .portrait h3 {
+    font-size: 14px;
+  }
+  .portrait .btn {
+    padding: 10px 15px;
+    margin-top: 1em;
+    font-size: 0.9em;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .menu .nav-link {
+    font-size: 15px;
+  }
+  .adventure {
+    flex-direction: column;
+  }
+  .sydney,
+  .cape-breton {
+    margin-top: 10px;
+  }
+  .booking {
+    margin: 0 15px;
+  }
+  .input-box {
+    flex-direction: column;
+  }
+  .input-box input,
+  .input-box select {
+    height: 40px;
+  }
+  .container {
+    padding-top: 8em;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    margin-top: 300px;
+    padding: 20px;
+  }
+  .user-info h1 {
+    font-size: 30px;
+  }
+  .success a {
+    width: 80%;
+  }
+  .confirm {
+    padding: 0 15px;
+    text-align: center;
+  }
+  .confirm h1 {
+    font-size: 30px;
+  }
+  .confirm h3 {
+    font-size: 1em;
+  }
+  #adventure option {
+    color: red;
+  }
+}

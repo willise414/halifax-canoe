@@ -93,6 +93,8 @@ formSubmit.addEventListener("click", () => {
   document.querySelector(".confirm").classList.remove("hideMessage");
   document.querySelector(".container").classList.add("hideMessage");
   document.querySelector(".confirm").classList.add("showMessage");
+  document.querySelector(".success-btn").classList.remove("hideBtn");
+  document.querySelector(".success-btn").classList.add("showBtn");
   let fullName = document.getElementById("name");
   let selected = document.getElementById("adventure");
   let email = document.getElementById("email").value;

@@ -55,7 +55,7 @@ function changePage() {
 }
 
 // Form Handler
-let fullName = document.getElementById("name").value;
+// let fullName = document.getElementById("name").value;
 
 let formSubmit = document.getElementById("booking-btn");
 
